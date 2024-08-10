@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ReColor</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/new.css" />
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c2297566c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="image">
+          <img src="../Images/ReColor 100X100.png" alt="" />
+        </div>
+        <div class="motto">
+          <h1>Colorizing Stories, Reviving Memories</h1>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="options">
+          <a href="../index.html"><i class="fa-solid fa-house"></i>Home</a>
+          <a href=""><i class="fa-solid fa-file"></i>New</a>
+          <a href="#"><i class="fa-solid fa-folder-open"></i>Load</a>
+          <a href="#"><i class="fa-solid fa-clipboard"></i>History</a>
+        </div>
+        <div class="utilities">
+          <a href="../HTML/settings.html"
+            ><i class="fa-solid fa-gear"></i>Settings</a
+          >
+          <a href="#"><i class="fa-solid fa-circle-info"></i>Help</a>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="content">
+          <h2 id="h2_message">Upload a file and let the magic happen</h2>
+          <div class="upload">
+            <div class="drop-zone" id="drop-zone">
+              <p>Drag & Drop your files here</p>
+              <input type="file" id="file-input" />
+            </div>
+          </div>
+          <!-- This one will be used for just the preview and colorize button. They are wrapped in a div so that i can dynamically make them disappear -->
+          <div class="imagepreviewbox">
+            <div class="image-container">
+              <div class="image-preview">
+                <img src="../Images/Result/Man and his dog 1920.jpg" alt="" />
+              </div>
+            </div>
+            <div class="cta">
+              <button id="colorize-button" disabled>Colorize</button>
+            </div>
+          </div>
+          <!-- The box for showing the image and the output side by side -->
+          <div class="image-wrapper">
+            <div class="imageOutputBox">
+              <div class="image-container">
+                <div class="image-preview-source">
+                  <h3>Before</h3>
+                  <img
+                    src="../Images/Black and white/16 year old woman in 1943.jpg"
+                    alt=""
+                    id="source-image"
+                  />
+                </div>
+                <div class="image-preview-output">
+                  <h3>After</h3>
+                  <img
+                    src="../Images/Result/16 year old woman in 1943.jpg"
+                    alt=""
+                    id="colorized-image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="actionbuttons">
+              <a href="#" id="download-button">Download</a>
+              <a href="#">Save</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/new.js"></script>
+  </body>
+</html>

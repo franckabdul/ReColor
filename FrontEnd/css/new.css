@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #468189;
+  --secondary-color: #d49a6a;
+  --tertiary-color: #faebd7;
+  --bcgrd: #333131;
+}
+/* Upload */
+.upload {
+  display: block;
+}
+.drop-zone {
+  width: 400px;
+  height: 200px;
+  border: 2px dashed var(--primary-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.drop-zone p {
+  font-size: 18px;
+  color: var(--tertiary-color);
+}
+
+.drop-zone input[type="file"] {
+  display: none;
+}
+
+.drop-zone.dragover {
+  border-color: var(--secondary-color);
+}
+/*Image Preview*/
+.imagepreviewbox {
+  display: none;
+}
+.image-container {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+}
+
+.image-preview {
+  width: 100%;
+  height: 600px; /* Fixed height for the preview area */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the image scales down and fits within the box */
+  display: block;
+}
+
+/* Image Output */
+.image-wrapper {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.imageOutputBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.image-container {
+  width: 1650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-preview-source,
+.image-preview-output {
+  width: calc(50% - 10px);
+  height: 600px;
+  display: flex;
+  overflow: hidden;
+}
+
+.image-preview-source img,
+.image-preview-output img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.actionbuttons {
+  display: flex;
+  margin-top: 10px;
+}
+.actionbuttons a {
+  padding: 10px 20px;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 8px;
+  background-color: var(--bcgrd);
+  color: var(--tertiary-color);
+  font-weight: 600;
+  font-size: 16px;
+  transition: ease-in-out 0.3s;
+  width: 100%;
+  text-align: center;
+  margin: 0 10px;
+}
+.actionbuttons a:hover {
+  background-color: var(--primary-color);
+  color: var(--bcgrd);
+  cursor: pointer;
+  font-weight: 600;
+}

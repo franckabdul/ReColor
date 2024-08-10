@@ -1,0 +1,13 @@
+
+backend/model/DeOldify/results/
+backend/model/DeOldify/models
+backend/model/DeOldify/*
+backend/model/DeOldify/.git
+backend/model/DeOldify/.gitignore
+backend/model/DeOldify/.gitmodules
+backend/model/DeOldify/.gitattributes
+!backend/model/DeOldify/deoldify_model_use.py
+!backend/model/DeOldify/app.py
+
+FrontEnd/node_modules/*
+```
