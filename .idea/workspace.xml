@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a034bbe4-c504-4a1b-8a7d-e035e3c2f622" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/css/new.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/css/new.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/javascript/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/javascript/new.js" afterDir="false" />
-    </list>
+    <list default="true" id="a034bbe4-c504-4a1b-8a7d-e035e3c2f622" name="Changes" comment="first commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +98,7 @@
       <workItem from="1723199100608" duration="6177000" />
       <workItem from="1723298834102" duration="3266000" />
       <workItem from="1723302121728" duration="2764000" />
-      <workItem from="1723354452700" duration="6542000" />
+      <workItem from="1723354452700" duration="6943000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

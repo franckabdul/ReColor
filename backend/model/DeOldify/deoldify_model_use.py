@@ -16,11 +16,13 @@ torch.backends.cudnn.benchmark = True
 # Suppress warnings
 warnings.filterwarnings("ignore", category=UserWarning, message=".*?Your .*? set is empty.*?")
 
-# Initialize the colorizer
-colorizer = get_image_colorizer(artistic=True)
-
-def colorize_image(image_bytes, file_name, render_factor=35):
+def colorize_image(image_bytes, file_name, render_factor=35, artistic=True):
     print("Starting colorize_image function.")
+
+    if artistic:
+        print("Artistic mode enabled.")
+    else:
+        print("Artistic mode disabled.")
     
     # Create a temporary directory and file
     with tempfile.NamedTemporaryFile(delete=False, suffix='.jpg') as temp_file:
@@ -42,6 +44,9 @@ def colorize_image(image_bytes, file_name, render_factor=35):
             # Ensure the results directory exists
             os.makedirs(result_dir, exist_ok=True)
             print(f"Results directory '{result_dir}' ensured.")
+            
+            # Initialize the colorizer with the specified artistic value
+            colorizer = get_image_colorizer(artistic=artistic)
             
             # Process the image
             output_path = colorizer.plot_transformed_image(path=temp_path, render_factor=render_factor, compare=False)
