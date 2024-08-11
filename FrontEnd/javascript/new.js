@@ -1,3 +1,8 @@
+/*
+TODO
+Ensure that the swal progressbar doesn't go beyond 100% and doens't reach 100% before the image is ready
+
+ */
 document.addEventListener("DOMContentLoaded", function () {
   console.log(
     "Page started successfully at " + new Date().toLocaleTimeString()
