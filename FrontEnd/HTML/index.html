@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>ReColor</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/home.css" />
     <!-- Import Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,13 +17,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
   </head>
   <body>
     <div class="container">
       <div class="header">
         <div class="image">
-          <img src="Images/ReColor 100X100.png" alt="" />
+          <img src="Images/ReColor 100X100.png" alt="" id="logo"/>
         </div>
         <div class="motto">
           <h1>Colorizing Stories, Reviving Memories</h1>
@@ -37,7 +36,9 @@
           <a href=""><i class="fa-solid fa-clipboard"></i>History</a>
         </div>
         <div class="utilities">
-          <a href="HTML/settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+          <a href="HTML/settings.html"
+            ><i class="fa-solid fa-gear"></i>Settings</a
+          >
           <a href=""><i class="fa-solid fa-circle-info"></i>Help</a>
         </div>
       </div>
@@ -115,9 +116,11 @@
           </div>
           <div class="cta">
             <a href="HTML/new.html">Get Started</a>
+          </div>
         </div>
       </div>
     </div>
+    <script src="javascript/index.js"></script>
     <script src="javascript/script.js"></script>
   </body>
 </html>
