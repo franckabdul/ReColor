@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log(
     "Page started successfully at " + new Date().toLocaleTimeString()
   );
+
   const dropZone = document.getElementById("drop-zone");
   const fileInput = document.getElementById("file-input");
-  let message = document.getElementById("h2_message");
+  const message = document.getElementById("h2_message");
   const colorizeButton = document.getElementById("colorize-button");
   const imagePreview = document.getElementsByClassName("imagepreviewbox")[0];
   const sourceImage = document.getElementById("source-image");
@@ -13,6 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let uploadedFile = null; // Global variable to store the file
   let colorizedImage = null; // Global variable to store the colorized image
+
+  // Wrapper function to show SweetAlert with global styles
+  function showSwal(options) {
+    Swal.fire({
+      customClass: { container: "custom-swal" },
+      ...options,
+    });
+  }
 
   dropZone.addEventListener("dragover", (e) => {
     e.preventDefault();
@@ -43,13 +52,24 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Files:", files);
     const file = files[0];
     if (file.type.startsWith("image/")) {
-      swal.fire("Image dropped!", file.name, "success");
+      showSwal({
+        title: "Image dropped!",
+        text: file.name,
+        icon: "success",
+      });
     } else {
-      swal.fire("Invalid file type", "Please drop an image file", "error");
+      showSwal({
+        title: "Invalid file type",
+        text: "Please drop an image file",
+        icon: "error",
+      });
       return;
     }
     if (files.length > 1) {
-      swal.fire("You can only upload one file at a time", "", "error");
+      showSwal({
+        title: "You can only upload one file at a time",
+        icon: "error",
+      });
       return;
     }
 
@@ -67,17 +87,51 @@ document.addEventListener("DOMContentLoaded", function () {
     uploadedFile = file;
   }
 
+  function progressBar(ready = false) {
+    showSwal({
+      title: "Let the magic happen!",
+      html: '<b></b><br/><br/><div id="progress-bar"><div></div></div>',
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      didOpen: () => {
+        Swal.showLoading();
+        const progressBar = document.querySelector("#progress-bar div");
+
+        if (ready) {
+          progressBar.style.width = `100%`;
+          Swal.close();
+          return;
+        }
+
+        let progress = 0;
+        const interval = setInterval(() => {
+          progress += 10;
+          progressBar.style.width = `${progress}%`;
+          if (progress >= 100) {
+            clearInterval(interval);
+            Swal.close();
+          }
+        }, 1000);
+      },
+    });
+  }
+
   colorizeButton.addEventListener("click", function (e) {
     e.preventDefault(); // Prevent default form submission
 
     const file = uploadedFile;
 
     if (!file) {
-      swal.fire("No image selected", "Please upload an image first", "error");
+      showSwal({
+        title: "No image selected",
+        text: "Please upload an image first",
+        icon: "error",
+      });
       return;
     }
 
     console.log("File:", file);
+    progressBar(); // Start the progress bar
 
     // Set source image
     sourceImage.src = URL.createObjectURL(file);
@@ -98,7 +152,11 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .then((data) => {
         if (data.error) {
-          swal.fire("Error", data.error, "error");
+          showSwal({
+            title: "Error",
+            text: data.error,
+            icon: "error",
+          });
         } else {
           // Assuming the API returns a base64 encoded image
           colorizedImage = "data:image/png;base64," + data.image;
@@ -107,19 +165,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
           // Hide the image preview and show the comparison images
           imagePreview.style.display = "none";
+          // Apply fade-in effect to the colorized image
+          imagewrapper.style.opacity = "0";
           imagewrapper.style.display = "flex";
+          setTimeout(() => {
+            imagewrapper.style.opacity = "1";
+          }, 0);
           message.innerText = "Image colorized successfully!";
 
           // Enable download button
           downloadButton.disabled = false;
+
+          // Jump to 100% instantly since the image is ready
+          progressBar(true);
         }
       })
       .catch((error) => {
-        swal.fire(
-          "Error",
-          "An error occurred while colorizing the image",
-          "error"
-        );
+        showSwal({
+          title: "Error",
+          text: "An error occurred while colorizing the image",
+          icon: "error",
+        });
         console.error("Error:", error);
       });
   });
@@ -132,11 +198,11 @@ document.addEventListener("DOMContentLoaded", function () {
       link.download = "colorized_image.png"; // Set the download filename
       link.click();
     } else {
-      swal.fire(
-        "No image to download",
-        "Please colorize an image first",
-        "error"
-      );
+      showSwal({
+        title: "No image to download",
+        text: "Please colorize an image first",
+        icon: "error",
+      });
     }
   });
 });

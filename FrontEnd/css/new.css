@@ -81,6 +81,11 @@
 
 .image-preview-source,
 .image-preview-output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   width: calc(50% - 10px);
   height: 600px;
   display: flex;
@@ -94,6 +99,23 @@
   object-fit: contain;
   display: block;
 }
+/* Image container transitions */
+.image-wrapper,
+.image-preview {
+  transition: opacity 1s ease-in-out;
+}
+
+.image-preview {
+  /* Initial state for the image preview */
+  opacity: 1;
+}
+
+.image-wrapper {
+  /* Initial state for the image wrapper */
+  opacity: 0;
+}
+
+
 .actionbuttons {
   display: flex;
   margin-top: 10px;

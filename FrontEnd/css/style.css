@@ -140,3 +140,57 @@ body {
   cursor: pointer;
   font-weight: 800;
 }
+/* Global SweetAlert2 Styles */
+.custom-swal .swal2-popup {
+  /* General popup styles */
+  font-family: Arial, sans-serif; /* Font family */
+  border-radius: 10px; /* Border radius */
+  background-color: var(--bcgrd); /* Dark background color */
+  color: var(--tertiary-color); /* Light text color */
+}
+
+.custom-swal .swal2-title {
+  /* Title styling */
+  color: var(--tertiary-color); /* Title color */
+  font-size: 1.5rem; /* Font size */
+}
+
+.custom-swal .swal2-html-container {
+  /* HTML content styling */
+  color: var(--tertiary-color); /* Text color */
+}
+
+.custom-swal .swal2-confirm {
+  /* Confirm button styling */
+  background-color: var(--primary-color); /* Primary color background */
+  color: var(--bcgrd); /* Dark text color on button */
+}
+
+.custom-swal .swal2-deny {
+  /* Deny button styling */
+  background-color: var(--secondary-color); /* Secondary color background */
+  color: var(--bcgrd); /* Dark text color on button */
+}
+
+.custom-swal .swal2-cancel {
+  /* Cancel button styling */
+  background-color: var(--tertiary-color); /* Tertiary color background */
+  color: var(--bcgrd); /* Dark text color on button */
+}
+
+.custom-swal .swal2-loader {
+  /* Loader styling */
+  border-color: var(--primary-color); /* Primary color loader */
+}
+
+/* Progress Bar Styles */
+.custom-swal #progress-bar {
+  width: 100%;
+  background: var(--bcgrd); /* Dark background for progress bar */
+}
+
+.custom-swal #progress-bar div {
+  width: 0%;
+  height: 20px;
+  background: var(--primary-color); /* Primary color for progress */
+}
