@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a034bbe4-c504-4a1b-8a7d-e035e3c2f622" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/HTML/history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/css/history.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/javascript/history.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/HTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/HTML/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/HTML/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/HTML/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/HTML/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/HTML/settings.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/javascript/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/javascript/new.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/javascript/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/javascript/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/javascript/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/model/DeOldify/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/model/DeOldify/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/model/DeOldify/deoldify_model_use.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/model/DeOldify/deoldify_model_use.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,27 +52,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.new.html.executor&quot;: &quot;Coverage&quot;,
-    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
-    &quot;Python.app.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Feature&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/franck/Workspace/image-colorizer-app&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/396/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.new.html.executor": "Coverage",
+    "Node.js.main.js.executor": "Run",
+    "Python.app.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Feature",
+    "last_opened_file_path": "/home/franck/Workspace/image-colorizer-app",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.JavaScript",
+    "ts.external.directory.path": "/snap/webstorm/396/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/FrontEnd/HTML" />
@@ -164,7 +161,7 @@
       <workItem from="1723481811406" duration="372000" />
       <workItem from="1723489423482" duration="2976000" />
       <workItem from="1723492406552" duration="190000" />
-      <workItem from="1723494030208" duration="763000" />
+      <workItem from="1723494030208" duration="1367000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

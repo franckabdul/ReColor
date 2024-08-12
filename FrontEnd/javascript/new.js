@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const sourceImage = document.getElementById("source-image");
   const imagewrapper = document.getElementsByClassName("image-wrapper")[0];
   const downloadButton = document.getElementById("download-button");
+  let didColorize;
+  let filename;
 
   let uploadedFile = null; // Global variable to store the file
   let colorizedImage = null; // Global variable to store the colorized image
@@ -105,9 +107,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let progress = 0;
         const interval = setInterval(() => {
-         if(progress<80){
+          if (progress < 80) {
             progress += 8;
-         }
+          }
           progressBar.style.width = `${progress}%`;
           if (progress >= 100) {
             clearInterval(interval);
@@ -138,21 +140,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set source image
     sourceImage.src = URL.createObjectURL(file);
 
-    const renderFactor = localStorage.getItem('renderFactor');
-    const model=localStorage.getItem('model');
-    let artistic=false;
+    const renderFactor = localStorage.getItem("renderFactor");
+    const model = localStorage.getItem("model");
+    let artistic = false;
     const formData = new FormData();
     formData.append("image", file);
-    if(model==='artistic'){
-       artistic=true;
+    if (model === "artistic") {
+      artistic = true;
     }
 
-    if(renderFactor===null||isNaN(renderFactor)){
-    formData.append("render_factor", 35);
-    }else{
-    formData.append("render_factor", renderFactor);
+    if (renderFactor === null || isNaN(renderFactor)) {
+      formData.append("render_factor", 35);
+    } else {
+      formData.append("render_factor", renderFactor);
     }
-    formData.append('artistic',artistic);
+    formData.append("artistic", artistic);
     fetch("http://127.0.0.1:5000/colorize", {
       method: "POST",
       body: formData,
@@ -185,7 +187,23 @@ document.addEventListener("DOMContentLoaded", function () {
             imagewrapper.style.opacity = "1";
           }, 0);
           message.innerText = "Image colorized successfully!";
+          didColorize = true;
+          // Retrieve existing history from localStorage or initialize an empty array
+          let history =
+            JSON.parse(localStorage.getItem("ProcessedHistory")) || [];
 
+          // Add the new processed item to the history array
+          const Processed = {
+            file: uploadedFile.name,
+            time: new Date().toLocaleTimeString(),
+            date: new Date().toLocaleDateString(),
+          };
+          history.push(Processed);
+
+          // Store the updated history array back in localStorage
+          if (localStorage.getItem("history") === "true") {
+            localStorage.setItem("ProcessedHistory", JSON.stringify(history));
+          }
           // Enable download button
           downloadButton.disabled = false;
 

@@ -124,7 +124,8 @@ body {
   align-items: center;
   margin-top: 20px;
 }
-.cta a,button {
+.cta a,
+button {
   padding: 10px 20px;
   border: 1px solid var(--tertiary-color);
   border-radius: 8px;
@@ -134,7 +135,8 @@ body {
   font-size: 16px;
   transition: ease-in-out 0.3s;
 }
-.cta a,button:hover {
+.cta a,
+button:hover {
   background-color: var(--primary-color);
   color: var(--bcgrd);
   cursor: pointer;
