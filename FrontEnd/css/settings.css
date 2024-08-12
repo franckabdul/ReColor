@@ -14,39 +14,6 @@
   flex-direction: column;
 }
 
-/* Tab Navigation */
-.tabs {
-  display: flex;
-  justify-content: left;
-  background-color: var(--secondary-color);
-  border-bottom: 3px solid var(--primary-color);
-}
-
-.tabs ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  margin: 0;
-}
-
-.tabs li {
-  margin: 0 20px;
-}
-
-.tabs a {
-  font-size: 1.5rem;
-  color: var(--tertiary-color);
-  padding: 10px 20px;
-  display: block;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-.tabs a.active,
-.tabs a:hover {
-  color: var(--secondary-color);
-  border-bottom: 3px solid var(--secondary-color);
-}
-
 /* Main Content */
 .settings-content {
   flex-grow: 1;
@@ -59,11 +26,9 @@
 /* Settings Tab */
 .settings-tab {
   margin-bottom: 40px;
-  display: none;
-}
-.settings-tab.active {
   display: block;
 }
+
 
 .settings-tab h2 {
   font-family: "Squada One", sans-serif;

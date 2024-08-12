@@ -1,8 +1,3 @@
-/*
-TODO
-Ensure that the swal progressbar doesn't go beyond 100% and doens't reach 100% before the image is ready
-
- */
 document.addEventListener("DOMContentLoaded", function () {
   console.log(
     "Page started successfully at " + new Date().toLocaleTimeString()
@@ -94,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function progressBar(ready = false) {
     showSwal({
-      title: "Let the magic happen!",
+      title: "Sit tight while the magic happen!",
       html: '<b></b><br/><br/><div id="progress-bar"><div></div></div>',
       allowOutsideClick: false,
       showConfirmButton: false,
@@ -110,7 +105,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let progress = 0;
         const interval = setInterval(() => {
-          progress += 10;
+         if(progress<80){
+            progress += 8;
+         }
           progressBar.style.width = `${progress}%`;
           if (progress >= 100) {
             clearInterval(interval);
@@ -141,10 +138,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set source image
     sourceImage.src = URL.createObjectURL(file);
 
+    const renderFactor = localStorage.getItem('renderFactor');
+    const model=localStorage.getItem('model');
+    let artistic=false;
     const formData = new FormData();
     formData.append("image", file);
-    formData.append("render_factor", 35); // or get this value from user input
+    if(model==='artistic'){
+       artistic=true;
+    }
 
+    if(renderFactor===null||isNaN(renderFactor)){
+    formData.append("render_factor", 35);
+    }else{
+    formData.append("render_factor", renderFactor);
+    }
+    formData.append('artistic',artistic);
     fetch("http://127.0.0.1:5000/colorize", {
       method: "POST",
       body: formData,

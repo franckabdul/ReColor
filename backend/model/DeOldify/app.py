@@ -17,7 +17,7 @@ def colorize_endpoint():
 
     image_file = request.files['image'].read()
     render_factor = int(request.form.get('render_factor', 35))
-    artistic = request.form.get('artistic', 'true').lower() == 'true'  # Default to True if not provided
+    artistic = request.form.get('artistic', 'false').lower() == 'true'  # Default to True if not provided
     image_name = request.files['image'].filename
 
     try:

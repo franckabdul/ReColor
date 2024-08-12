@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a034bbe4-c504-4a1b-8a7d-e035e3c2f622" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/FrontEnd/javascript/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/image-colorizer-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/image-colorizer-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/HTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/HTML/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/HTML/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/HTML/new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/HTML/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/HTML/settings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Images/ReColor 100X100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Images/ReColor-removebg-preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Images/ReColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Images/ReColor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/css/settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/css/settings.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/HTML/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/javascript/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/javascript/new.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/javascript/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/javascript/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/javascript/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/javascript/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/model/DeOldify/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/model/DeOldify/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/model/DeOldify/deoldify_model_use.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/model/DeOldify/deoldify_model_use.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.new.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.new.html.executor&quot;: &quot;Coverage&quot;,
     &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
     &quot;Python.app.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -73,7 +72,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/387/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/396/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -82,7 +81,10 @@
       <recent name="$PROJECT_DIR$/FrontEnd/HTML" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.new.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/image-colorizer-app/FrontEnd/HTML/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="new.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/image-colorizer-app/FrontEnd/HTML/new.html" useFirstLineBreakpoints="true" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -115,16 +117,17 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.main.js" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.new.html" />
+        <item itemvalue="Node.js.main.js" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.19072.16" />
-        <option value="bundled-python-sdk-8336bb23522e-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.19072.16" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.347" />
+        <option value="bundled-python-sdk-c2d6afa66fbe-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.347" />
       </set>
     </attachedChunks>
   </component>
@@ -156,6 +159,12 @@
       <workItem from="1723302121728" duration="2764000" />
       <workItem from="1723354452700" duration="8755000" />
       <workItem from="1723367936216" duration="471000" />
+      <workItem from="1723478517911" duration="2569000" />
+      <workItem from="1723481436349" duration="356000" />
+      <workItem from="1723481811406" duration="372000" />
+      <workItem from="1723489423482" duration="2976000" />
+      <workItem from="1723492406552" duration="190000" />
+      <workItem from="1723494030208" duration="763000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -185,6 +194,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/FrontEnd/javascript/script.js</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/image_colorizer_app$app.coverage" NAME="app Coverage Results" MODIFIED="1723368241457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/model/DeOldify" />

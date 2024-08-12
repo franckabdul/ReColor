@@ -45,23 +45,6 @@
         <div class="content">
           <div class="settings-page">
             <!-- Tab Navigation -->
-            <nav class="tabs">
-              <ul>
-                <li>
-                  <a
-                    href="#treatment-tab"
-                    class="tab-link active"
-                    data-tab="treatment-tab"
-                    >Treatment</a
-                  >
-                </li>
-                <li>
-                  <a href="#account-tab" class="tab-link" data-tab="account-tab"
-                    >Account</a
-                  >
-                </li>
-              </ul>
-            </nav>
 
             <!-- Main Content -->
             <div class="settings-content">
@@ -84,21 +67,11 @@
                 <div class="setting-item">
                   <label for="ai-model" class="setting-label">AI Model</label>
                   <select id="ai-model">
-                    <option value="model1">Artistic</option>
-                    <option value="model2">Stable</option>
+                    <option value="stable">Stable</option>
+                    <option value="artistic">Artistic</option>
                   </select>
                 </div>
 
-                <!-- Watermark Option -->
-                <div class="setting-item">
-                  <label for="watermark-switch" class="setting-label">
-                    <i class="fas fa-water"></i> Watermark Image
-                  </label>
-                  <label class="toggle-switch">
-                    <input type="checkbox" id="watermark-switch" />
-                    <span class="slider"></span>
-                  </label>
-                </div>
 
                 <!-- Render Factor Option -->
                 <div class="setting-item">
@@ -114,64 +87,6 @@
                     value="35"
                   />
                 </div>
-              </div>
-
-              <!-- Account Tab -->
-              <div class="settings-tab" id="account-tab">
-                <h2>Account Settings</h2>
-
-                <!-- Username -->
-                <div class="setting-item">
-                  <label for="username" class="setting-label">Username</label>
-                  <input type="text" id="username" class="input" />
-                </div>
-
-                <!-- Profile Picture -->
-                <!-- Uncomment if needed
-                <div class="setting-item">
-                  <label for="profile-picture" class="setting-label">Profile Picture</label>
-                  <input type="file" id="profile-picture" class="input" />
-                </div>
-                -->
-
-                <!-- Password -->
-                <div class="setting-item" id="password_change">
-                  <label for="password" class="setting-label">Password</label>
-                  <div class="password_change_input">
-                    <input
-                      type="password"
-                      id="current_password"
-                      class="input"
-                      placeholder="Current Password"
-                    />
-                    <input
-                      type="password"
-                      id="new_password"
-                      class="input"
-                      placeholder="New password"
-                    />
-                    <input
-                      type="password"
-                      id="confirm_password"
-                      class="input"
-                      placeholder="Confirm Password"
-                    />
-                    <a href="#">Save changes</a>
-                  </div>
-                </div>
-
-                <!-- Email -->
-                <div class="setting-item">
-                  <label for="email" class="setting-label">Email</label>
-                  <input type="email" id="email" class="input" />
-                </div>
-
-                <!-- Phone Number -->
-                <div class="setting-item">
-                  <label for="phone" class="setting-label">Phone Number</label>
-                  <input type="tel" id="phone" class="input" />
-                </div>
-
                 <!-- Save History -->
                 <div class="setting-item">
                   <label for="history-switch" class="setting-label">
@@ -183,124 +98,7 @@
                   </label>
                 </div>
               </div>
-            </div>
-            <!-- Treatment Tab -->
-            <div class="settings-tab" id="treatment-tab">
-              <h2>Treatment Settings</h2>
 
-              <!-- Theme Switcher -->
-              <div class="setting-item">
-                <label for="theme-switch" class="setting-label">
-                  <i class="fas fa-adjust"></i> Dark Mode
-                </label>
-                <label class="toggle-switch">
-                  <input type="checkbox" id="theme-switch" />
-                  <span class="slider"></span>
-                </label>
-              </div>
-
-              <!-- AI Model Selection -->
-              <div class="setting-item">
-                <label for="ai-model" class="setting-label">AI Model</label>
-                <select id="ai-model">
-                  <option value="model1">Artistic</option>
-                  <option value="model2">Stable</option>
-                </select>
-              </div>
-
-              <!-- Watermark Option -->
-              <div class="setting-item">
-                <label for="watermark-switch" class="setting-label">
-                  <i class="fas fa-water"></i> Watermark Image
-                </label>
-                <label class="toggle-switch">
-                  <input type="checkbox" id="watermark-switch" />
-                  <span class="slider"></span>
-                </label>
-              </div>
-              <!-- Render Factor Option -->
-              <div class="setting-item">
-                <label for="render-factor" class="setting-label">
-                  <i class="fas fa-cogs"></i> Render Factor
-                </label>
-                <input
-                  type="number"
-                  id="render-factor"
-                  class="input"
-                  min="35"
-                  max="45"
-                  value="35"
-                />
-              </div>
-
-              <!-- Account Tab -->
-              <div class="settings-tab" id="account-tab">
-                <h2>Account Settings</h2>
-
-                <!-- Username -->
-                <div class="setting-item">
-                  <label for="username" class="setting-label">Username</label>
-                  <input type="text" id="username" class="input" />
-                </div>
-
-                <!-- Profile Picture
-                <div class="setting-item">
-                  <label for="profile-picture" class="setting-label"
-                    >Profile Picture</label
-                  >
-                  <input type="file" id="profile-picture" class="input" />
-                </div> -->
-
-                <!-- Password -->
-                <div class="setting-item" id="password_change">
-                  <label for="password" class="setting-label">Password</label>
-                  <div class="password_change_input">
-                    <input
-                      type="password"
-                      id="current_password"
-                      class="input"
-                      placeholder="Current Password"
-                    />
-                    <input
-                      type="password"
-                      id="new_password"
-                      class="input"
-                      placeholder="New password"
-                    />
-                    <input
-                      type="password"
-                      id="confirm_password"
-                      class="input"
-                      placeholder="Confirm Password"
-                    />
-                    <a href="#">Save changes</a>
-                  </div>
-                </div>
-
-                <!-- Email -->
-                <div class="setting-item">
-                  <label for="email" class="setting-label">Email</label>
-                  <input type="email" id="email" class="input" />
-                </div>
-
-                <!-- Phone Number -->
-                <div class="setting-item">
-                  <label for="phone" class="setting-label">Phone Number</label>
-                  <input type="tel" id="phone" class="input" />
-                </div>
-
-                <!-- Save History -->
-                <div class="setting-item">
-                  <label for="history-switch" class="setting-label">
-                    <i class="fas fa-history"></i> Save History
-                  </label>
-                  <label class="toggle-switch">
-                    <input type="checkbox" id="history-switch" />
-                    <span class="slider"></span>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
