@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a034bbe4-c504-4a1b-8a7d-e035e3c2f622" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/FrontEnd/HTML/history.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/css/history.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/javascript/history.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/HTML/help.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/css/help.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/javascript/help.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/HTML/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/HTML/history.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/HTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/HTML/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/HTML/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/HTML/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/javascript/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/javascript/new.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/javascript/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/javascript/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/HTML/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/HTML/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,34 +54,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.new.html.executor": "Coverage",
-    "Node.js.main.js.executor": "Run",
-    "Python.app.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Feature",
-    "last_opened_file_path": "/home/franck/Workspace/image-colorizer-app",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.JavaScript",
-    "ts.external.directory.path": "/snap/webstorm/396/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.new.html.executor&quot;: &quot;Coverage&quot;,
+    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.new.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.app.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Feature&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/franck/Workspace/image-colorizer-app&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.JavaScript&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/396/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/FrontEnd/HTML" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/image-colorizer-app/FrontEnd/HTML/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/image-colorizer-app/FrontEnd/HTML/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="new.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/image-colorizer-app/FrontEnd/HTML/new.html" useFirstLineBreakpoints="true" useBuiltInWebServerPort="true">
@@ -114,7 +117,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.new.html" />
         <item itemvalue="Node.js.main.js" />
       </list>
@@ -123,8 +125,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.347" />
-        <option value="bundled-python-sdk-c2d6afa66fbe-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.347" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.342" />
       </set>
     </attachedChunks>
   </component>
@@ -162,6 +163,16 @@
       <workItem from="1723489423482" duration="2976000" />
       <workItem from="1723492406552" duration="190000" />
       <workItem from="1723494030208" duration="1367000" />
+      <workItem from="1723503163544" duration="680000" />
+      <workItem from="1723536709552" duration="933000" />
+      <workItem from="1723539191796" duration="1176000" />
+      <workItem from="1723546804155" duration="974000" />
+      <workItem from="1723548223787" duration="2932000" />
+      <workItem from="1723568523234" duration="678000" />
+      <workItem from="1723914935830" duration="9000" />
+      <workItem from="1723932165941" duration="23000" />
+      <workItem from="1723946867225" duration="158000" />
+      <workItem from="1724016761281" duration="1024000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
