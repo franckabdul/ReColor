@@ -14,39 +14,6 @@
   flex-direction: column;
 }
 
-/* Tab Navigation */
-.tabs {
-  display: flex;
-  justify-content: left;
-  background-color: var(--secondary-color);
-  border-bottom: 3px solid var(--primary-color);
-}
-
-.tabs ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  margin: 0;
-}
-
-.tabs li {
-  margin: 0 20px;
-}
-
-.tabs a {
-  font-size: 1.5rem;
-  color: var(--tertiary-color);
-  padding: 10px 20px;
-  display: block;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-.tabs a.active,
-.tabs a:hover {
-  color: var(--highlight-color);
-  border-bottom: 3px solid var(--highlight-color);
-}
-
 /* Main Content */
 .settings-content {
   flex-grow: 1;
@@ -59,13 +26,14 @@
 /* Settings Tab */
 .settings-tab {
   margin-bottom: 40px;
+  display: block;
 }
 
 .settings-tab h2 {
   font-family: "Squada One", sans-serif;
-  color: var(--highlight-color);
+  color: var(--secondary-color);
   margin-bottom: 25px;
-  border-bottom: 2px solid var(--highlight-color);
+  border-bottom: 2px solid var(--secondary-color);
   padding-bottom: 10px;
 }
 
@@ -170,7 +138,7 @@
 }
 
 input:checked + .slider {
-  background-color: var(--highlight-color);
+  background-color: var(--secondary-color);
 }
 
 input:checked + .slider:before {
@@ -181,9 +149,9 @@ input:checked + .slider:before {
 .tabs,
 .settings-content {
   font-family: "courier new", monospace;
-  background: linear-gradient(145deg, #333131, #282828);
-  border-left: 3px solid var(--highlight-color);
-  border-right: 3px solid var(--highlight-color);
+  background: var(--bcgrd);
+  border-left: 3px solid var(--secondary-color);
+  border-right: 3px solid var(--secondary-color);
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 }

@@ -1,0 +1,24 @@
+.main {
+  overflow: scroll;
+}
+.history-item {
+  background-color: var(--bcgrd);
+  color: var(--tertiary-color);
+  font-weight: 600;
+  font-size: 16px;
+  transition: ease-in-out 0.3s;
+  margin-bottom: 20px;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 10px;
+  padding: 10px;
+  width: 1650px;
+  flex-direction: row;
+}
+.history-item:hover {
+  background-color: var(--primary-color);
+  color: var(--bcgrd);
+  font-weight: 600;
+}
+#history-container:first-child {
+  margin-top: 20px;
+}

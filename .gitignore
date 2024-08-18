@@ -8,6 +8,6 @@ backend/model/DeOldify/.gitmodules
 backend/model/DeOldify/.gitattributes
 !backend/model/DeOldify/deoldify_model_use.py
 !backend/model/DeOldify/app.py
-
+dist
 FrontEnd/node_modules/*
 ```

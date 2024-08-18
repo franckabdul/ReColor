@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>ReColor</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/help.css" />
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+            rel="stylesheet"
+    />
+    <script
+            src="https://kit.fontawesome.com/c2297566c6.js"
+            crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="image">
+            <img src="../Images/ReColor.png" alt="" id="logo" />
+        </div>
+        <div class="motto">
+            <h1>Colorizing Stories, Reviving Memories</h1>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="options">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="new.html"><i class="fa-solid fa-file"></i>New</a>
+            <a href="history.html"
+            ><i class="fa-solid fa-clipboard"></i>History</a
+            >
+        </div>
+        <div class="utilities">
+            <a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+            <a href="help.html"><i class="fa-solid fa-circle-info"></i>Help</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="content">
+            <h2>Help</h2>
+            <p>Welcome to ReColor! This app allows you to bring old black-and-white pictures to life with just one click. Whether you want to add a touch of nostalgia to your family photos or breathe new life into historical images, ReColor makes it easy and fun.</p>
+
+            <h3>Getting Started</h3>
+            <ul>
+                <li><strong>New Project:</strong> To begin, click on the "New" button. Upload the image you wish to colorize by selecting it from your computer. Once your image is uploaded, click the "Colorize" button to start the magic. Your colorized image will be ready in a few moments, depending on the settings you choose.</li>
+            </ul>
+
+            <h3>Parameters</h3>
+            <ul>
+                <li><strong>Render Factor:</strong> Adjust the render factor to control the detail and time taken for colorization. The render factor ranges from 35 to 45. Higher values produce more detailed colorizations but may take longer to process.</li>
+                <li><strong>Model Selection:</strong>
+                    <ul>
+                        <li><strong>Stable Model:</strong> Choose this model for the most accurate and realistic colorization results.</li>
+                        <li><strong>Artistic Model:</strong> Opt for this model if you want vibrant and visually striking colors, even if they are less realistic.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Technical Information</h3>
+            <p>ReColor is built on the DeOldify project by jantic, a powerful image colorization tool available on GitHub. ReColor leverages this technology to deliver impressive results with minimal effort.</p>
+
+            <h2>FAQ</h2>
+            <h3>How do I upload an image?</h3>
+            <p>To upload an image, click on the "New" button and select the image file from your computer. Once uploaded, you'll see it displayed in the app, ready for colorization.</p>
+
+            <h3>What is the render factor?</h3>
+            <p>The render factor determines the level of detail in the colorization process. A higher render factor (up to 45) will produce more detailed and nuanced colors but will take longer to process. The recommended range is between 35 and 45.</p>
+
+            <h3>What’s the difference between the stable and artistic models?</h3>
+            <p>
+                <strong>Stable Model:</strong> This model provides the most accurate and realistic colors, ideal for preserving the authenticity of historical photos.<br>
+                <strong>Artistic Model:</strong> This model offers more vibrant and bold colors, perfect for creative projects where realism is not the primary concern.
+            </p>
+
+            <h3>How long does it take to colorize an image?</h3>
+            <p>The time it takes to colorize an image depends on the render factor you choose. Higher render factors result in more detailed images but take longer to process. On average, colorization should only take a few moments.</p>
+
+            <h3>Can I colorize images of any size?</h3>
+            <p>Yes, ReColor supports various image sizes. However, processing times may increase with larger images or higher render factors.</p>
+
+            <h3>Is ReColor available on multiple platforms?</h3>
+            <p>Yes, ReColor is a cross-platform application, meaning you can use it on various operating systems without any issues.</p>
+
+            <h3>Where can I learn more about the DeOldify project?</h3>
+            <p>DeOldify is an open-source project by jantic, and you can learn more about it or contribute to its development by visiting its <a href="https://github.com/jantic/DeOldify">GitHub page</a>.</p>
+
+
+        </div>
+    </div>
+</div>
+<script src="../javascript/help.js"></script>
+<script src="../javascript/script.js"></script>
+</body>
+</html>

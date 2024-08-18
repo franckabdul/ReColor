@@ -17,10 +17,11 @@ def colorize_endpoint():
 
     image_file = request.files['image'].read()
     render_factor = int(request.form.get('render_factor', 35))
+    artistic = request.form.get('artistic', 'false').lower() == 'true'  # Default to True if not provided
     image_name = request.files['image'].filename
 
     try:
-        colorized_image_bytes = colorize_image(image_file, image_name, render_factor=render_factor)
+        colorized_image_bytes = colorize_image(image_file, image_name, render_factor=render_factor, artistic=artistic)
         return jsonify({'image': colorized_image_bytes})
     except Exception as e:
         return jsonify({'error': str(e)}), 500

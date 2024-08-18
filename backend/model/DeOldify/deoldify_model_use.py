@@ -8,6 +8,7 @@ import io
 from PIL import Image
 import warnings
 import base64
+import time
 
 # Set up the device for GPU
 device.set(device=DeviceId.GPU0)
@@ -16,11 +17,14 @@ torch.backends.cudnn.benchmark = True
 # Suppress warnings
 warnings.filterwarnings("ignore", category=UserWarning, message=".*?Your .*? set is empty.*?")
 
-# Initialize the colorizer
-colorizer = get_image_colorizer(artistic=True)
-
-def colorize_image(image_bytes, file_name, render_factor=35):
+def colorize_image(image_bytes, file_name, render_factor=35, artistic=False):
     print("Starting colorize_image function.")
+    start_time=time.time()
+    if artistic:
+        print("Artistic mode enabled.")
+    else:
+        print("Artistic mode disabled.")
+    print(f"Render factor: {render_factor}")
     
     # Create a temporary directory and file
     with tempfile.NamedTemporaryFile(delete=False, suffix='.jpg') as temp_file:
@@ -42,6 +46,9 @@ def colorize_image(image_bytes, file_name, render_factor=35):
             # Ensure the results directory exists
             os.makedirs(result_dir, exist_ok=True)
             print(f"Results directory '{result_dir}' ensured.")
+            
+            # Initialize the colorizer with the specified artistic value
+            colorizer = get_image_colorizer(artistic=artistic)
             
             # Process the image
             output_path = colorizer.plot_transformed_image(path=temp_path, render_factor=render_factor, compare=False)
@@ -67,8 +74,13 @@ def colorize_image(image_bytes, file_name, render_factor=35):
                     print(f"Temporary file {temp_path} deleted.")
                 except Exception as e:
                     print(f"Failed to delete temporary file: {e}")
-    
+
     # Convert to base64
     colorized_image_base64 = base64.b64encode(colorized_image_bytes).decode('utf-8')
+
+    #Measure the time the process took
+    elapsed_time=time.time()-start_time
+    print(f"Process took {elapsed_time: 2f} seconds ")
+
     
     return colorized_image_base64

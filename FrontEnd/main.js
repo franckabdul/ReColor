@@ -9,7 +9,7 @@ function createWindow() {
     },
   });
 
-  win.loadFile("index.html");
+  win.loadFile("HTML/index.html");
 
   // Remove the default menu
   Menu.setApplicationMenu(null);
