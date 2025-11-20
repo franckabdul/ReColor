@@ -1,6 +1,10 @@
 """
 Application factory for the Flask colorization service.
 """
+from dotenv import load_dotenv
+
+load_dotenv()
+
 import os
 import logging
 from logging.handlers import RotatingFileHandler
@@ -79,7 +83,7 @@ def create_app(config_name='development'):
     setup_logging(app)
 
     app.logger.info("=" * 70)
-    app.logger.info("Starting ReColor Image Colorization Service")
+    app.logger.info("Starting ReColor Media Colorization Service")
     app.logger.info(f"Environment: {config_name}")
     app.logger.info(f"Debug mode: {app.debug}")
     app.logger.info("=" * 70)
@@ -88,18 +92,23 @@ def create_app(config_name='development'):
     CORS(app)
     app.logger.info("CORS enabled")
 
-    # Initialize extensions (load model)
-    from extensions.deoldify_loader import init_colorizer
+    # Initialize extensions (load models)
+    from extensions.deoldify_loader import init_colorizer, init_video_colorizer
 
     use_gpu = app.config.get('USE_GPU', False)
     gpu_id = app.config.get('GPU_DEVICE_ID', 0)
     artistic = app.config.get('ARTISTIC_MODE', True)
+    root_folder = os.path.abspath('.')
 
-    init_colorizer(use_gpu=use_gpu, gpu_id=gpu_id, artistic=artistic,root_folder=os.path.abspath('.'))
+    # Load image colorizer
+    init_colorizer(use_gpu=use_gpu, gpu_id=gpu_id, artistic=artistic, root_folder=root_folder)
+
+    # Load video colorizer
+    init_video_colorizer(use_gpu=use_gpu, gpu_id=gpu_id, root_folder=root_folder)
 
     # Register blueprints
-    from routes.image_routes import image_bp
-    app.register_blueprint(image_bp)
+    from routes.media_routes import media_bp
+    app.register_blueprint(media_bp)
     app.logger.info("Routes registered")
 
     app.logger.info("Application initialization complete")

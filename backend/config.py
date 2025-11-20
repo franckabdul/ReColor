@@ -2,21 +2,28 @@
 Application configuration classes.
 """
 import os
-import torch
 
 
 class Config:
     """Base configuration."""
     # File upload limits
-    MAX_CONTENT_LENGTH = 16 * 1024 * 1024  # 16 MB
+    MAX_CONTENT_LENGTH = 100 * 1024 * 1024  # 100 MB for videos
 
-    # Output directory for colorized images
+    # Output directories
     OUTPUT_FOLDER = 'results'
+    VIDEO_OUTPUT_FOLDER = 'results/videos'
 
+    # Ensure output folders exist
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+    os.makedirs(VIDEO_OUTPUT_FOLDER, exist_ok=True)
 
+    # Default colorization settings
     DEFAULT_RENDER_FACTOR = 35
     ARTISTIC_MODE = True
+
+    # Video settings
+    VIDEO_RENDER_FACTOR = 21  # Lower for faster processing
+    SUPPORTED_VIDEO_FORMATS = {'.mp4', '.avi', '.mov', '.mkv', '.webm'}
 
     # Device settings
     USE_GPU = True
@@ -38,6 +45,7 @@ class ProductionConfig(Config):
 
 # Helper to check if GPU is available
 try:
+    import torch
     DevelopmentConfig.USE_GPU = torch.cuda.is_available()
 except ImportError:
     DevelopmentConfig.USE_GPU = False
