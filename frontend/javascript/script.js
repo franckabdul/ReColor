@@ -25,11 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
       setColorVariable("--tertiary-color", "#1d1d1d");
       setColorVariable("--bcgrd", "#f5f5f5");
       darkModeToggle.checked = false;
-      // logo.src = "../images/ReColorlight.png";
     }
   }
 
-  // Call the function to set the initial theme
   window.onload = function () {
     dark_light_mode();
     console.log("Dark mode is set to", localStorage.getItem("darkMode"));
@@ -42,6 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   darkModeToggle.addEventListener("change", function () {
     localStorage.setItem("darkMode", this.checked ? "true" : "false");
-    dark_light_mode(); // Update the colors when the toggle changes
+    dark_light_mode();
   });
 });

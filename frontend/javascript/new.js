@@ -25,7 +25,6 @@ window.addEventListener("DOMContentLoaded", async function () {
   let uploadedFile = null; // Global variable to store the file
   let colorizedImage = null; // Global variable to store the colorized image
 
-  // Wrapper function to show SweetAlert with global styles
   function showSwal(options) {
     Swal.fire({
       customClass: { container: "custom-swal" },
@@ -149,7 +148,7 @@ window.addEventListener("DOMContentLoaded", async function () {
       }
 
       console.log("File:", file);
-      progressBar(); // Start the progress bar
+      progressBar();
 
       // Set source image
       sourceImage.src = URL.createObjectURL(file);
@@ -171,7 +170,7 @@ window.addEventListener("DOMContentLoaded", async function () {
       formData.append("artistic", artistic);
 
       // Use the server URL from config
-      fetch(`${serverUrl}/colorize`, {
+      fetch(`${serverUrl}/colorize/image`, {
         method: "POST",
         body: formData,
       })

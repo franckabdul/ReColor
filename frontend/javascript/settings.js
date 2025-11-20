@@ -5,19 +5,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const model = document.getElementById("ai-model");
   const historyToggle = document.getElementById("history-switch");
 
-  // Wrapper function to show SweetAlert with global styles
   function showSwal(options) {
     Swal.fire({
       customClass: { container: "custom-swal" },
       ...options,
     });
   }
-  // Retrieve and set the model value from localStorage
   const storedModel = localStorage.getItem("model");
   model.value = storedModel || "stable";
   localStorage.setItem("model", model.value);
 
-  // Update localStorage when the model selection changes
   model.addEventListener("change", function () {
     localStorage.setItem("model", this.value);
     console.log("Model is set to ", localStorage.getItem("model"));
@@ -41,10 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       return;
     }
-    if (value < 35 || value > 45) {
+    if (value < 10 || value > 40) {
       showSwal({
         title: "Error",
-        text: "The render factor must be between 35 and 45",
+        text: "The render factor must be between 10 and 40",
         icon: "error",
         allowOutsideClick: false,
       });
@@ -59,18 +56,15 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 
-  //history toggle
   historyToggle.addEventListener("change", function () {
     localStorage.setItem("history", this.checked ? "true" : "false");
     console.log("History is set to", localStorage.getItem("history"));
   });
   historyToggle.checked = localStorage.getItem("history") === "true";
 
-  // Make the render factor value match
   const renderFactorValue = localStorage.getItem("renderFactor");
   renderFactor.value = renderFactorValue || 35;
 
-  // Make the selected model match
   const modelValue = localStorage.getItem("model");
   if (modelValue) {
     model.value = modelValue;
