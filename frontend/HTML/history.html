@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ReColor</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/history.css" />
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c2297566c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="image">
+          <img src="../Images/ReColor.png" alt="" id="logo" />
+        </div>
+        <div class="motto">
+          <h1>Colorizing Stories, Reviving Memories</h1>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="options">
+          <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          <a href="new.html"><i class="fa-solid fa-file"></i>New</a>
+          <a href="history.html"
+            ><i class="fa-solid fa-clipboard"></i>History</a
+          >
+        </div>
+        <div class="utilities">
+          <a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+          <a href="help.html"><i class="fa-solid fa-circle-info"></i>Help</a>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="content">
+          <h2>History</h2>
+          <div class="history-container" id="history-container">
+            <!-- History items will be injected here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../javascript/history.js"></script>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>

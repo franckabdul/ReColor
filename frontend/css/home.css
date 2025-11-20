@@ -1,0 +1,39 @@
+/* Carousel */
+
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 50%;
+  height: auto;
+}
+.copyright-note {
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 3px;
+  z-index: 10;
+}
+
+/* Get started */

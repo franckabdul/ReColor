@@ -1,0 +1,7 @@
+.main {
+    /*overflow-x: hidden;*/
+    overflow-y: scroll;
+}
+.main {
+    margin-bottom: 80px;
+}

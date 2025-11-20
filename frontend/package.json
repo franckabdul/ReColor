@@ -1,0 +1,39 @@
+{
+  "name": "ReColor",
+  "version": "1.0.0",
+  "description": "A desktop app for AI-based image colorization.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Franck Nasibu",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-builder": "^24.3.0",
+    "electron-installer-debian": "^3.2.0",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "electron-is-dev": "^3.0.1",
+    "sweetalert2": "^11.6.13"
+  },
+  "build": {
+    "appId": "com.francknasibu.recolor",
+    "productName": "ReColor",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility",
+      "maintainer": "Franck Nasibu <francknasibu52@gmail.com>"
+    },
+    "extraMetadata": {
+      "homepage": "https://your-app-homepage.com"
+    }
+  }
+}
