@@ -1,2 +1,9 @@
 .idea
-backend/model
+backend/models
+
+
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md
+
+results
+backend/results
