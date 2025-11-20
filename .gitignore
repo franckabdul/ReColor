@@ -1,5 +1,6 @@
 .idea
 backend/models
+backend/logs
 
 
 #Ignore vscode AI rules
