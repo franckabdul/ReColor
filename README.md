@@ -39,7 +39,7 @@ ReColor is a professional desktop application that uses AI to breathe new life i
 - **GPU**: CUDA-compatible GPU recommended for faster processing (CPU mode available)
 - **Storage**: At least 2GB free space for models and processed files
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 
@@ -239,7 +239,7 @@ Response:
 }
 ```
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 ReColor/
@@ -329,7 +329,7 @@ ReColor/
         └── config.json                 # Frontend configuration
 ```
 
-## ⚙Configuration
+## Configuration
 
 ### Render Factor Guidelines
 
