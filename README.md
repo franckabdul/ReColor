@@ -424,21 +424,6 @@ Log levels:
 - Use GPU if available
 - Increase system swap space
 
-## 🚀 Production Deployment
-
-### Using Gunicorn
-
-```bash
-pip install gunicorn
-gunicorn -w 4 -b 0.0.0.0:5000 wsgi:application
-```
-
-### Using Docker (Coming Soon)
-
-```bash
-docker build -t recolor-backend .
-docker run -p 5000:5000 recolor-backend
-```
 
 ## License
 
